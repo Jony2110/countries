@@ -1,0 +1,261 @@
+.light {
+  --header-bg: #fff;
+  --header-text: #2b3844;
+
+  --main-bg: #fafafa;
+  --main-text: #000;
+}
+
+.dark {
+  --header-bg: #2b3844;
+  --header-text: #fff;
+
+  --main-bg: #202c36;
+  --main-text: #fff;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  width: 1280px;
+  /* border: 4px solid #000; */
+}
+body {
+  background-color: var(--main-bg);
+  font-family: "Nunito Sans", sans-serif;
+}
+header {
+  background-color: var(--header-bg);
+}
+.header_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  gap: 937px;
+}
+.main_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  gap: 600px;
+  margin-bottom: 48px;
+}
+select {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  width: 200px;
+  padding-left: 24px;
+  padding-right: 77px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  height: 56px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+button {
+  width: 108px;
+  height: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  color: var(--header-text);
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+}
+
+.box_search {
+  display: flex;
+  width: 480px;
+  img {
+    margin-left: 32px;
+  }
+  align-items: center;
+  gap: 24px;
+  height: 56px;
+  background-color: var(--header-bg);
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+input {
+  background-color: var(--header-bg);
+  color: var(--heder-text);
+  margin: 0;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--header-text);
+  width: 100%;
+  :hover {
+    background-color: #202c36;
+  }
+}
+.imgFix {
+  width: 264px;
+  height: 160px;
+}
+
+.list-item {
+  width: 264px;
+  height: 336px;
+  box-shadow: 5px 5px 5px -2px rgba(168, 197, 209, 0.51);
+  border-radius: 11px;
+}
+.list-item img {
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+#cardList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Делит контейнер на 4 равные части */
+  gap: 74px;
+  list-style: none;
+}
+
+.region {
+  margin: 8px 0 8px 24px;
+}
+.project {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--header-text);
+}
+
+.name {
+  margin: 24px 0 16px 24px;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--header-text);
+}
+p {
+  margin-left: 24px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--header-text);
+}
+
+.flexs {
+  display: flex;
+  color: var(--header-text);
+}
+
+.project-detals {
+  width: 300px;
+  font-weight: 800;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+.flex-fix {
+  display: flex;
+  margin: 0;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+
+  width: 136px;
+  height: 40px;
+  font-weight: 300;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 16px;
+  img {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#cardLists {
+  gap: 120px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 560px;
+    height: 401px;
+    border-radius: 11px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 23px;
+    margin: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+.box-1,
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--main-text);
+  span {
+    color: var(--main-text);
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 900px;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: linear-gradient(
+      135deg,
+      #0000 calc(50% - 0.5em),
+      #000 0 calc(50% + 0.5em),
+      #0000 0
+    )
+    right/300% 100%;
+  animation: l22 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader::before {
+  content: "Loading...";
+
+  color: #0000;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(
+    135deg,
+    #000 calc(50% - 0.5em),
+    #fff 0 calc(50% + 0.5em),
+    #000 0
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l22 {
+  100% {
+    background-position: left;
+  }
+}
+.hidden {
+  display: none;
+}

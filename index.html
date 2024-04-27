@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <title>Counrtis</title>
+  </head>
+  <body class="light">
+    <header>
+      <div class="container">
+        <div class="header_flex">
+          <h2 class="project">Where in the world?</h2>
+          <button id="darkMod">
+            <img src="/StaticImg/svg/moon_svg.svg" alt="Moon" />Dark Mode
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main_flex">
+          <div class="box_search">
+            <img src="./StaticImg/svg/search-black.svg" alt="lupa" />
+            <input
+              type="input"
+              id="input"
+              value=""
+              placeholder="Search for a country…"
+            />
+          </div>
+          <select type="search" name="selecttt" id="selecttt">
+            <option value="" selected>All</option>
+            <option value="Americas">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <ul id="cardList"></ul>
+    </div>
+    <div class="container">
+      <div class="loader"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
